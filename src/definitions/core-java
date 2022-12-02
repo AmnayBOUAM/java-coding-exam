@@ -1,172 +1,203 @@
 Please answer the below core-java Questions:
 
 Q. What is programing language?
-A.
+A.a programming language is a language that allows us to write algorithms and computer programs that are understandable
+by the machine (computer)
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What are the jdk components ? define each component?
-A.
+A. JDK stands for java development kit, it contains development tools and the JRE (java runtime environment) as well as
+ libraries and classes and the JVM (java virtual machine)
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is an IDE?
-A.
+A.An IDE (integrated development environment) is software for creating applications, it facilitates the work of developers
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What are the IDEs available in the market to support java?
-A.
+A.the IDEs available on the market to support java are: IntelliJ IDEA, Visual Studio, Eclipse, Xcode, NetBeans...etc.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Explain the entire java life cycle.
-A.
+A.the life cycle of Java begins by editing the program on a text editor or an IDE then compiling the source
+code and transforming it into byte code in order to execute it
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is class?
-A.
+A.A class is a template or blueprint that allows us to create objects and methods.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is object?
-A.
+A.An object is an instance of a class
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the entry point of an application?
-A.
+A.The entry point of an application is main method
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Why main method is static?
-A.
+A.The main method is static because the compiler can call it without the creation of an object
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Which class is the superclass of all classes in java?
-A.
+A.java.lang.Object class is the super class for all classes
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is difference between path and classpath variables?
-A.
+A.PATH is an environment variable that is used by the operating system to find executable files
+  (javac.exe, java.exe, javadoc.exe, etc.)
+  Classpath is an environment variable which is used by the compiler and the JVM to find the classpath.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between an Interface and Abstract class?
-A.
+A.The interface supports multiple inheritance, abstract class doesn't support multiple inheritance, interface has only
+static and final variables, abstract class can have final, non-final, static and non-static variables,
+unlike the abstract class an interface can extend another Java interface only
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Can you make an Object from an Interface and Abstract class ? how do you use interface and abstract class?
-A.
+A.No, we can't create an object of an an interface and abstract class.
+An interface can be implemented using keyword "implements".
+An abstract class can be extended using keyword "extends".
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Access Specifier?
-A.
+A.Access specifier define the visibility of the class, method an object (public, private, protected and default)
+private and protected cannot be used for classes
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is OOP ? Define each feature of java OOP.
-A.
+A.OOP (Object-Oriented Programming) the main principles of OOP are : abstraction, encapsulation, inheritance, and polymorphism.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Java Package and which package is imported by default?
-A.
+A.the package consists of predefined java classes and interfaces, when we use these classes we must import
+associated packages.
+java.lang Package is imported by default.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is API? Name list of API that you have used so far.
-A.
+A.APIs are mechanisms that allow two software components to communicate with each other using a set
+of definitions and protocols
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Does java support multiple inheritance?
-A.
+A.Java doesn’t support multiple inheritances
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is method overloading and when it happens?
-A.
+A.method overloading is when two or more methods have the same name in the same class
+this happens by changing the number of method arguments
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Explain exceptions in java and how to handle it?
-A.
+A. An exception occurs if there is an error while executing the program
+we can use the try-catch method to handle exceptions
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is static keyword in java? How it has been used in variables, methods and classes?
-A.
+A.static keyword is a non-access modifier, it is used for memory management. For example the static variable
+can be used to refer to the common property of all objects and a static method can be invoked without the need
+for creating an instance of a class.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is final and how it has been used variables, methods and classes?
-A.
-
+A.Final is a keyword, it is a non-access specifier which is used to restrict a class, variable and method
+if we use the final keyword with a variable : we cannot modify its value
+if we use the final keyword with a method : it cannot be overridden by any subclasses
+if we use the final keyword with a class :  we restrict the other classes to inherit it
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is final, finally and finalize?
-A.
-
+A.- Final is a keyword, it is a non-access specifier which is used to restrict a class, variable and method
+- The finally block executes when the try block exits, it is used to put important codes such as clean up code
+- finalize() is a method, it allows to perform finalization operations, for example an operation of cleaning an object
+before the Garbage Collector system takes care of it
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is a constructor ?
-A.
+A.A constructor is used to initialize objects, it is called when an object of a class is created.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Can we have multiple constructors in a class?
-A.
+A.Yes
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. If we don't have a constructor declared, what is called during the object creation?
-A.
+A.The default constructor is called during the object creation
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is "this" keyword in java ?
-A.
+A."this" keyword refers to the current object in a method or constructor
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is "super" keyword in java? How to use it?
-A.
+A."super" is used to call superclass methods and to access the superclass constructor
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is JVM stand for?
-A.
+A.Java Virtual Machine
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Is JVM platform independent?
-A.
+A.Yes, JVM is platform independent. (Linux has a different JVM than Windows) that's why it supports portability
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What version of java are you using?
-A.
+A.i use java 11
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is JAR stand for?
-A.
+A.JAR stand for : Java ARchive
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between JDK and JVM?
-A.
+A.JVM is a part of Java Run Environment (JRE) and JRE is a part of JDK
+JDK contains tools required to write Java programs, and JRE to execute them.
+JVM provides a platform-independent way of executing Java source code.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between JVM and JRE?
-A.
+A.JVM is a part of Java Run Environment (JRE)
+JVM provides a platform-independent way of executing Java source code.
+JRE contains class libraries, JVM, and other supporting files
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is compile time and run time?
-A.
+A.Compile time is the period when the programming code is converted to the binary code
+Run time is the period of time when a program is running and occurs after compile time
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between String, StringBuffer and StringBuilder?
-A.
+A.StringBuffer is thread-safe and synchronized whereas StringBuilder is not. String consumes more memory
+as compared to the StringBuffer and StringBuilder
+A String is immutable, StringBuffer and StringBuilder are mutable
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Singleton class?
-A.
+A.A singleton class is a class that can have only one object at a time
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between while and do..while loop?
-A.
+A.do while loop execute the statements at least once, then the condition is checked
+While loop checks the condition first and then executes the statements
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Enum?
-A.
+A.An enumeration is a special class that contains a group of constants
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Iterator?
-A.
+A.An Iterator is an object that can be used to loop through collections (ArrayList and HashSet)
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. Which one will take more memory, an int or Integer?
-A.
+A.Integer take more memory
+Integer size memory = 16 bytes
+int size memory = 4 bytes
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is JIT stands for?
-A.
+A.JIT stands for Java-In-Time Compiler
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is Recursion?
-A.
+A.Recursion is the technique of making a method call itself (this is a way to implement a loop)

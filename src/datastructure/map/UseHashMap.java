@@ -22,9 +22,17 @@ public class UseHashMap {
         map.put(4, "Boston");
         map.put(5, "San Jose");
         map.put(6, "Seattle");
+        System.out.println(map);
+        for (Integer i : map.keySet()) {
+            System.out.println("key: " + i + " value: " + map.get(i));
+        }
 
+        for (Integer i : map.keySet()) {
+            if (map.get(i).equalsIgnoreCase("Denver")){
+            System.out.println(map.get(i));
+            }
+        }
         //write your code here
-
 
     }
 }

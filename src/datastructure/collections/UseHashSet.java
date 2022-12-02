@@ -1,5 +1,7 @@
 package datastructure.collections;
 
+import java.util.HashSet;
+
 public class UseHashSet {
 
     /*
@@ -14,6 +16,24 @@ public class UseHashSet {
     public static void main(String[] args) {
 
         //write your code here
+        HashSet<Integer> set = new HashSet<>();
+        set.add(3);
+        set.add(3);
+        set.add(4);
+        set.add(1);
+        set.add(7);
+        set.add(1);
+        set.add(0);
+        set.add(7);
+        set.add(4);
+        set.add(5);
+        set.add(0);
+        set.add(9);
+        set.add(8);
 
+        set.remove(1);
+        System.out.println(set);
+        set.forEach(System.out::println);
+        System.out.println("size of the HashSet: " + set.size());
     }
 }
