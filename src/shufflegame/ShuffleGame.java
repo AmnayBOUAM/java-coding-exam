@@ -1,13 +1,14 @@
 package shufflegame;
 
 
+import java.util.Arrays;
 import java.util.Random;
 import java.util.Scanner;
 import java.util.concurrent.ThreadLocalRandom;
 
 public class ShuffleGame implements GameRoadMap{
 
-    Scanner scanner = new Scanner(System.in);
+    Scanner sc = new Scanner(System.in);
 
     int[] array = {1, 0 ,1};
 
@@ -29,11 +30,14 @@ public class ShuffleGame implements GameRoadMap{
 
     /**
      * captures the user input (1, 2 or 3) saves it in an integer variable and returns it
+     *
      * @return playerGuess: userInput value
      */
     public int playerGuess() {
+        System.out.print(">");
+        int userInput = sc.nextInt();
         //implement here
-        return 0;
+        return (userInput);
     }
 
     /**
@@ -43,6 +47,27 @@ public class ShuffleGame implements GameRoadMap{
      * @param playerGuess: takes the chosen position user input
      */
     public void checkGuess(int[] shuffledArray, int playerGuess) {
+        shuffledArray = shuffleGame(array);
+        if (String.valueOf(playerGuess).equalsIgnoreCase("1")){
+            if (shuffledArray[0]==0) {
+                System.out.println("good guess!\n\t 1  2  3\n\t"+ Arrays.toString(shuffledArray));
+            }else System.out.println("sorry!!! wrong guess!\n\t 1  2  3\n\t"+Arrays.toString(shuffledArray));
+        }
+        else if (String.valueOf(playerGuess).equalsIgnoreCase("2")) {
+            if (shuffledArray[1]==0){
+                System.out.println("good guess!\n\t 1  2  3\n\t"+Arrays.toString(shuffledArray));
+            }else System.out.println("sorry!!! wrong guess!\n\t 1  2  3\n\t"+Arrays.toString(shuffledArray));
+        }
+        else if (String.valueOf(playerGuess).equalsIgnoreCase("3")) {
+            if (shuffledArray[2]==0){
+                System.out.println("good guess!\n\t 1  2  3\n\t"+Arrays.toString(shuffledArray));
+            }else System.out.println("sorry!!! wrong guess!\n\t 1  2  3\n\t"+Arrays.toString(shuffledArray));
+        }
+        else {
+            System.out.println("invalid input");
+            tryAgain();
+        }
+
         //implement here
     }
 
@@ -51,7 +76,33 @@ public class ShuffleGame implements GameRoadMap{
      * uses the method recursion in order to loop in the game
      */
     public void play() {
+        System.out.print(">");
+        String response = sc.nextLine();
+        if (response.equals("y")){
+            System.out.println("pick 1, 2 or 3!\n\t [*, *, *]");
+            checkGuess(array, playerGuess());
+        } else if (response.equals("n")) {
+            System.out.println("see you next time!");
+        }else {
+            System.out.println("are you ready to play? y/n");
+            play();
+        }
+        tryAgain();
         //implement here
     }
 
+    public void tryAgain(){
+        System.out.println("do you want to try again? y/n");
+        System.out.print(">");
+        String response = sc.nextLine();
+        if (response.equals("y")){
+            System.out.println("pick 1, 2 or 3!\n\t [*, *, *]");
+            checkGuess(array, playerGuess());
+            tryAgain();
+        } else if (response.equals("n")) {
+            System.out.println("see you next time!");
+        }else {
+            tryAgain();
+        }
+    }
 }

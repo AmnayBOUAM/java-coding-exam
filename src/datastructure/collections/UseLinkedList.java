@@ -1,5 +1,9 @@
 package datastructure.collections;
 
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+
 public class UseLinkedList {
 
     /*
@@ -13,5 +17,20 @@ public class UseLinkedList {
 
         //write your code here
 
+        LinkedList<Integer> list = new LinkedList<Integer>();
+        for (int i = 1; i <= 10; i++ ){
+            list.add(i+5);
+        }
+        System.out.println("The ArrayList values: "+list);
+
+        list.remove(Integer.valueOf(6));
+        list.remove(5);
+        System.out.println(list);
+
+        Iterator<Integer> iter = list.iterator();
+        System.out.print("The iterator values: ");
+        while (iter.hasNext()) {
+            System.out.print(iter.next() + " ");
+        }
     }
 }

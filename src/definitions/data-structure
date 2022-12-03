@@ -1,48 +1,59 @@
 Please answer the below Data Structure Questions:
 
 Q. why do we need data structure?
-A.
+A.we need the data structure because it gives us an efficient way to store and organize data in a computer
 
 ------------------------------------------------------------------------------------------------------------------------
 What are the various operations that can be performed on different Data Structures?
-A.
+A. Insertion, Deletion, Search, Sort, Traversal, Copy, Merge ...etc
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. List out the areas in which data structures are applied extensively?
-A.
+A.numerical analysis, operating system, Artificial Intelligence, compiler design, database management, graphics,
+statistical analysis ...etc
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is an Array?
-A.
+A.Array is linear data structures, it is used to store multiple values in a single variable
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between the Array and ArrayList?
-A.
+A.An array has primitive data types as well as object data types. However.
+ ArrayList has only object-type data entries
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is LinkedList?
-A.
+A.A linked list is a linear data structure, it consists of nodes where each node contains a data field and a link
+to the next node in the list.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. How is an ArrayList different from Linked List?
-A.
+A.ArrayList uses a dynamic array to store the elements
+LinkedList uses a doubly linked list to store the elements
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is the difference between the HashTable and HashMap?
-A.
+A.HashMap is non-synchronized whereas Hashtable is synchronized
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What are the major data structures used in the following areas : RDBMS, Network data model and Hierarchical data model?
-A.
+A.Array is used majorly in RDBMS
+Graph (HashMap) is used majorly in Network data model
+Tree is used majorly in Hierarchical data model
+
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. How HashMap works in java?
-A.
+A.HashMap stores the data in the pair of Key and Value, It uses an array and LinkedList data structure internally
+for storing Key and Value
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What is ArrayIndexOutOfBoundsException in java? When it occurs?
-A.
+A.The ArrayIndexOutOfBoundsException is a runtime exception in Java
+it occurs when an array is accessed with an illegal index.
 
 ------------------------------------------------------------------------------------------------------------------------
 Q. What are the different ways of copying an array into another array?
-A.
+A.  - Create a new array of the same length and copy each element.
+    - Use the clone method of the array. Clone methods create a new array of the same size.
+    - Use System.arraycopy() method
